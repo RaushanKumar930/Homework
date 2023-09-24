@@ -1,0 +1,120 @@
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+h1{
+    border: 2px outset black;
+    width: auto;
+    text-align: center;
+    font-size: 350%;
+}
+.heading{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+.quote{
+    font-size: 20px;
+    text-align: center;
+    text-align-last: center;
+    width: 80%;
+    margin: auto;
+}
+img{
+    margin: 15px;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+	--time: 0.7s;
+}
+.cycle{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+	position: relative;
+	transition: background var(--time);
+}
+.cycle:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.cycle:hover img{
+    border-top: 1px rgb(70, 70, 70) solid;
+    border-left: 1px rgb(70, 70, 70) solid;
+    border-right: 10px black solid;
+    border-bottom: 10px black solid;
+}
+
+.cycle .name {
+	position: relative;
+	z-index: 5;
+	transition: color var(--time);
+}
+
+.cycle:hover .name{
+	color: #222;
+}
+
+.name{
+    font-size: 200%;
+    margin: 20px;
+    text-decoration: underline;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+}
+.discount{
+    color: red;
+    margin: 20px;
+}
+ins{
+    font-size: 35px;
+    color: lime;
+    background-color: rgba(180, 180, 180, 0.3);
+    border: 2px rgba(180, 180, 180, 0.3) solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.cycle:hover .mrp{
+	transition: color var(--time);
+    color: rgb(100, 100, 100);
+}
+.mrp{
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+    background-color: rgba(180, 180, 180, 0.3);
+    border: 2px rgba(180, 180, 180, 0.3) solid;
+    padding-left: 2px;
+    margin: 30px;
+}
+.details{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+h2{
+    margin: auto;
+}
+.links{
+    margin-right: 500px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.contact_img{
+    height: 100px;
+}
